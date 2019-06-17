@@ -5,6 +5,31 @@
 }
 
 /*---Basic---*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+#content {
+   flex: 1 0 auto;
+   padding-bottom: 30px;
+}
+
+#root {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+
 body {
    font-family: 'Roboto';
    font-size: 18px;
@@ -184,8 +209,6 @@ h1, h2, h3, h4, h5, h6 {
 /*---Footer---*/
 .footer {
    width: 100%;
-   position: absolute;
-   bottom: 0px;
    background-color: #000;
    display: flex;
 }
@@ -281,7 +304,6 @@ h1, h2, h3, h4, h5, h6 {
    margin-bottom: 12px;
 }
 .popwin_input {
-   
    display: block;
    width: 100%;
    height: 28px;
@@ -289,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
    margin: 5px 0;
    font-size: 20px;
    background-color: #2C4052;
-   border: 2px solid #EB0D77;
+   border: 2px solid #0D9BEB;
    border-radius: 7px;
    color: #fff;
    
@@ -297,7 +319,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .popwin_input:focus {
-   border-color: #0D9BEB;
+   border-color: #fff;
 }
 
 .popwin_btn {
@@ -307,21 +329,16 @@ h1, h2, h3, h4, h5, h6 {
    margin: 5px 0;
    font-size: 20px;
    background-color: #2C4052;
-   border: 2px solid #EB0D77;
+   border: 2px solid #0D9BEB;
    border-radius: 7px;
-   color: #EB0D77;
+   color: #0D9BEB;
    
    transition: background .2s linear, color .2s linear, border-color .2s linear;
 }
 
 .popwin_btn:hover {
-   background-color: #0D9BEB;
-   border-color: #0D9BEB;
+   border-color: #fff;
    color: #fff;
-}
-
-.popwin {
-   
 }
 
 .popwin__inner {
@@ -343,11 +360,6 @@ h1, h2, h3, h4, h5, h6 {
    font-size: 22px;
    color: #fff;
 }
-
-.popwin_input {
-   
-}
-
 
 .popwin_auth {
    background-color: #2C4052;
@@ -393,8 +405,8 @@ h1, h2, h3, h4, h5, h6 {
    font-weight: 300;
    position: absolute;
    background-color: #2C4052;
-   border: 4px solid #EB0D77;
-   color: #EB0D77;
+   border: 4px solid #0D9BEB;
+   color: #0D9BEB;
    line-height: 20px;
    right: 5px;
    text-align: center;
@@ -407,8 +419,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .close:hover { 
-   border-color: #0D9BEB;
-   color: #0D9BEB;
+   border-color: #fff;
+   color: #fff;
 }
 
 button:active, button:focus {

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Job Seeker</title>
+   <link href="https://fonts.googleapis.com/css?family=Rubik:300i,400,700&display=swap&subset=cyrillic" rel="stylesheet">  
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="cvedit.css">
+</head>
+
+<body>
+<div id="root" class="cvedit-background">
+<div id="content">
+
+<header class="header">
+   <div class="header__inner">
+      <div class="header__logo">
+         <img class="logo__img" src="content/icons/logo.png" alt="">
+         <div class="logo__text">JOB SEEKER</div>
+      </div>
+
+      <nav class="nav">
+         <a class="nav__link" href="#">Поиск работы</a>
+         <a class="nav__link" href="#">Новая вакансия</a>
+         <a class="nav__link" href="#">Компании</a>
+         <a class="nav__auth" href="#">
+            <img src="content/icons/exit.png" alt="">
+         </a>
+      </nav>
+   </div>
+</header>
+
+<div class="intro">
+   <div class="container">
+      <div class="path">Главная / Личный кабинет / Опыт работы</div>
+      <div class="cvedit__title">Редактировать резюме</div>
+
+      <div class="cv_menu">
+         <div class="cv_menu__item">
+            <div>Персональные данные</div>
+         </div>
+         <div class="cv_menu__item">
+            <div>Образование</div>
+         </div>
+         <div class="cv_menu__item cv_menu__item--active">
+            <div>Опыт работы</div>
+         </div>
+         <div class="cv_menu__item">
+            <div>Желаемая должность</div>
+         </div>
+         <div class="cv_menu__item">
+            <div>Дополнительно</div>
+         </div>
+      </div>
+   
+      <!---------------Опыт работы--------------->
+      <div class="cv_edit_area">
+         <div class="cv_edit_area_inner">
+            <table  class="cv__table">
+               <tr class="cv_edit_area__item">
+                  <td>Компания<span style="color: red">*</span></td>
+                  <td>
+                  <input type="text" placeholder="Введите название компании">
+                  </td>
+               </tr>
+
+               <tr class="cv_edit_area__item">
+                  <td>Должность
+                  <span style="color: red">*</span>
+                  </td>
+                  <td><input type="text" placeholder="Введите должность"></td>
+               </tr>
+
+               <tr class="cv_edit_area__item">
+                  <td>
+                     Город
+                     <span style="color: red">*</span>
+                  </td>
+                  <td><input type="text" placeholder="Выберите город"></td>
+               </tr>
+
+               <tr class="cv_edit_area__item">
+                  <td>
+                     Начало работы
+                     <span style="color: red">*</span>
+                  </td>
+                  <td>
+                  <input style="width:10%" type="text" placeholder="Месяц">
+                  <input style="width:14%" type="text" placeholder="Год">
+                  </td>
+               </tr>
+
+               <tr class="cv_edit_area__item">
+                  <td>
+                     Конец работы
+                     <span style="color: red">*</span>
+                  </td>
+                  <td>
+                     <input style="width:10%" type="text" placeholder="Месяц">
+                     <input style="width:14%" type="text" placeholder="Год">
+                  </td>
+               </tr>
+
+               <tr class="cv_edit_area__item">
+                  <td></td>
+                    <td>
+                     <input style="width:16px; height:16px;" type="checkbox" placeholder="">
+                     Работаю на данный момент
+                  </td>
+               </tr>
+            </table>
+            
+         <div style="margin: 18px 7px 0 ">
+            Обязанности и достижения
+            <span style="color: red">*</span>
+         </div>
+         <div class="flex_row_container">
+            <div>
+               <textarea style="font-size: 16px;" name="" id="" cols="64" rows="8" placeholder="Введите описание..."></textarea>
+            </div>
+            
+             <button 
+              style="width: 200px; height: 40px; border-radius: 4px; font-size: 16px;">
+               Добавить опыт работы
+            </button>
+            
+         </div>
+         </div>
+      </div>
+      <div class="cv_nav">
+            <button class="cvedit_btn">Назад</button> 
+            <button class="cvedit_btn">Далее</button> 
+      </div>
+   </div>
+</div>
+</div>
+
+<footer class="footer">
+   <div class="footer__inner">
+      <div class="footer__copyright">
+         © 2019 “JOB SEEKER”
+      </div>
+
+      <div class="social">
+         <div class="social__item">
+            <img src="content/social/facebook.png" alt="" class="social__icon">
+            <a class="basic_link social_link" href="https://www.facebook.com" target="_blank">Facebook</a>
+            <span class="social__text"></span>
+         </div>
+         <div class="social__item">
+            <img src="content/social/twitter.png" alt="" class="social__icon">
+            <a class="basic_link social_link" href="https://twitter.com/?lang=ru" target="_blank">Twitter</a>
+         </div>
+      </div>
+   </div>
+</footer>
+</div>
+</body>
+</html>

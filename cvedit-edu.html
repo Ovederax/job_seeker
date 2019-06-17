@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Job Seeker</title>
+   <link href="https://fonts.googleapis.com/css?family=Rubik:300i,400,700&display=swap&subset=cyrillic" rel="stylesheet">  
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="cvedit.css">
+</head>
+
+<body>
+<div id="root"  class="cvedit-background">
+<div id="content">
+
+<header class="header">
+   <div class="header__inner">
+      <div class="header__logo">
+         <img class="logo__img" src="content/icons/logo.png" alt="">
+         <div class="logo__text">JOB SEEKER</div>
+      </div>
+
+      <nav class="nav">
+         <a class="nav__link" href="#">Поиск работы</a>
+         <a class="nav__link" href="#">Новая вакансия</a>
+         <a class="nav__link" href="#">Компании</a>
+         <a class="nav__auth" href="#">
+            <img src="content/icons/exit.png" alt="">
+         </a>
+      </nav>
+   </div>
+</header>
+
+<div class="intro">
+   <div class="container">
+      <div class="path">Главная / Личный кабинет / Образование</div>
+      <div class="cvedit__title">Редактировать резюме</div>
+
+      <div class="cv_menu">
+         <div class="cv_menu__item">
+            <div>Персональные данные</div>
+         </div>
+         <div class="cv_menu__item cv_menu__item--active">
+            <div>Образование</div>
+         </div>
+         <div class="cv_menu__item">
+            <div>Опыт работы</div>
+         </div>
+         <div class="cv_menu__item">
+            <div>Желаемая должность</div>
+         </div>
+         <div class="cv_menu__item">
+            <div>Дополнительно</div>
+         </div>
+      </div>
+   
+      <!---------------Образование--------------->
+      <div class="cv_edit_area">
+        <div class="cv_edit_area_inner">
+            <table  class="cv__table">
+               <tr class="cv_edit_area__item"> 
+                  <td>Уровень образования</td>
+                  <td>
+                    <select name="" id="">
+                        <option value="">Высшее</option>
+                    </select>
+                  </td>
+               </tr>
+
+               <tr class="cv_edit_area__item"> 
+                  <td>Город</td>
+                  <td><input type="text"></td>
+               </tr>
+
+               <tr class="cv_edit_area__item"> 
+                  <td>Учебное заведение</td>
+                  <td><input type="text"></td>
+
+               </tr>
+
+               <tr class="cv_edit_area__item"> 
+                  <td>Факультет</td>
+                  <td><input type="text"></td>
+               </tr>
+
+               <tr class="cv_edit_area__item"> 
+                  <td>Специальность</td>
+                  <td><input type="text"></td>
+               </tr>
+
+               <tr class="cv_edit_area__item"> 
+                  <td>Форма обучения</td>
+                  <td>
+                     <select name="" id="">
+                        <option value="">Очная</option>
+                        <option value="">Заочная</option>
+                        <option value="">Очно-Заочная</option>
+                        <option value="">Дистанционная</option>
+                     </select>
+                  </td>
+               </tr>
+
+               <tr class="cv_edit_area__item"> 
+                  <td>Начало обучения</td>
+                  <td><input type="text" placeholder="Год"></td>
+               </tr>
+
+               <tr class="cv_edit_area__item"> 
+                  <td>Конец обучения</td>
+                  <td><input type="text" placeholder="Год"></td>
+               </tr>
+            </table>
+         
+            <button style="margin: 12px 0" class="cv_edit_area__btn">
+               Добавить учебное заведение
+           </button>
+        </div>
+      </div>
+      <div class="cv_nav">
+         <button class="cvedit_btn">Назад</button> 
+         <button class="cvedit_btn">Далее</button> 
+      </div>
+   </div>
+</div>
+</div>
+
+<footer class="footer">
+   <div class="footer__inner">
+      <div class="footer__copyright">
+         © 2019 “JOB SEEKER”
+      </div>
+
+      <div class="social">
+         <div class="social__item">
+            <img src="content/social/facebook.png" alt="" class="social__icon">
+            <a class="basic_link social_link" href="https://www.facebook.com" target="_blank">Facebook</a>
+            <span class="social__text"></span>
+         </div>
+         <div class="social__item">
+            <img src="content/social/twitter.png" alt="" class="social__icon">
+            <a class="basic_link social_link" href="https://twitter.com/?lang=ru" target="_blank">Twitter</a>
+         </div>
+      </div>
+   </div>
+</footer>
+</div>
+</body>
+</html>

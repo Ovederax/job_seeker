@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Job Seeker</title>
+   <link href="https://fonts.googleapis.com/css?family=Rubik:300i,400,700&display=swap&subset=cyrillic" rel="stylesheet">  
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="cvedit.css">
+</head>
+
+<body>
+<div id="root" class="cvedit-background">
+<div id="content">
+
+<header class="header">
+   <div class="header__inner">
+      <div class="header__logo">
+         <img class="logo__img" src="content/icons/logo.png" alt="">
+         <div class="logo__text">JOB SEEKER</div>
+      </div>
+
+      <nav class="nav">
+         <a class="nav__link" href="#">Поиск работы</a>
+         <a class="nav__link" href="#">Новая вакансия</a>
+         <a class="nav__link" href="#">Компании</a>
+         <a class="nav__auth" href="#">
+            <img src="content/icons/exit.png" alt="">
+         </a>
+      </nav>
+   </div>
+</header>
+
+<div class="intro">
+   <div class="container">
+      <div class="path">Главная / Личный кабинет / Дополнительно</div>
+      <div class="cvedit__title">Редактировать резюме</div>
+
+      <div class="cv_menu">
+         <div class="cv_menu__item">
+            <div>Персональные данные</div>
+         </div>
+         <div class="cv_menu__item">
+            <div>Образование</div>
+         </div>
+         <div class="cv_menu__item">
+            <div>Опыт работы</div>
+         </div>
+         <div class="cv_menu__item">
+            <div>Желаемая должность</div>
+         </div>
+         <div class="cv_menu__item cv_menu__item--active">
+            <div>Дополнительно</div>
+         </div>
+      </div>
+   
+      <!--------------Дополнительно-------------->
+      <div class="cv_edit_area">
+        <div class="cv_edit_area_inner">
+         <div class="cvedit_other__photo">
+            <div class="other__edit_photo" onclick="">
+               <img src="content/cvedit/photo.png" alt="">
+               <div>Загрузить фото</div>
+            </div>
+
+            <div class="other__edit_photo_desc">
+            <div style="font-weight: bold">Личная фотография</div>
+            Загрузите одну личную фотографию, где нет посторонних людей и животных.  Лицо на фото должно быть в фокусе полностью: от линии волос и до нижней точки подбородка, также должны быть видны уши.
+            </div>
+         </div>
+         
+         <div style="font-weight: bold">
+            Профиль в социальной сети
+         </div>
+         <div>
+            Укажите ссылки на профили в социальных сетях (это поможет нам лучше узнать Вши предпочтения и посоветовать подходяющую работу).
+         </div>
+
+         <div class="cv_other_social">
+            <div class="cv_other_social__item">
+               <img src="content/social/odnoklassniki.png" alt="">
+               <input type="text">
+            </div>
+               
+            <div class="cv_other_social__item">
+               <img src="content/social/vk.png" alt="">
+               <input type="text">
+            </div>
+            <div class="cv_other_social__item">
+               <img src="content/social/instagram.png" alt="">
+               <input type="text">
+            </div>
+            <div class="cv_other_social__item">
+               <img src="content/social/twitter2.png" alt="">
+               <input type="text">
+            </div>
+            <div class="cv_other_social__item">
+               <img src="content/social/facebook2.png" alt="">
+               <input type="text">
+            </div>
+         </div>
+      </div>
+      </div>
+      <div class="cv_nav">
+         <div></div>
+         <button class="cvedit_btn">Сохранить</button> 
+      </div>
+   </div>
+</div>
+</div>
+
+<footer class="footer">
+   <div class="footer__inner">
+      <div class="footer__copyright">
+         © 2019 “JOB SEEKER”
+      </div>
+
+      <div class="social">
+         <div class="social__item">
+            <img src="content/social/facebook.png" alt="" class="social__icon">
+            <a class="basic_link social_link" href="https://www.facebook.com" target="_blank">Facebook</a>
+            <span class="social__text"></span>
+         </div>
+         <div class="social__item">
+            <img src="content/social/twitter.png" alt="" class="social__icon">
+            <a class="basic_link social_link" href="https://twitter.com/?lang=ru" target="_blank">Twitter</a>
+         </div>
+      </div>
+   </div>
+</footer>
+</div>
+</body>
+</html>
